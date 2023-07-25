@@ -1,0 +1,30 @@
+.Pline
+{
+    color: black;
+}
+#Check
+{
+    margin: 40px;
+}
+.dropdown
+{
+    display: flex;
+    flex-direction: column;
+}
+.Contant
+{
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+}
+.Contant2
+{
+    display: flex;
+    flex-direction: column;
+}
+@media screen and (max-width: 767px) {
+    .Contant
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    }
