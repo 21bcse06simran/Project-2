@@ -1,0 +1,5 @@
+.Ibutton
+{
+    display: flex;
+    flex-direction: column;
+}

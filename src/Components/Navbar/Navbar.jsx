@@ -16,18 +16,18 @@ function Navbar() {
                 <a className="nav-link active" aria-current="page" href="/"><h6>Home</h6></a>
                 </li>
                 <li className="nav-item">
-                <a className="nav-link" href="/"><h6>Man</h6></a>
+                <a className="nav-link" href="/"><h6 className='navh'>Man</h6></a>
                 </li>
                 <li className="nav-item">
-                <a className="nav-link" href="/"><h6>Woman</h6></a>
+                <a className="nav-link" href="/"><h6 className='navh'>Woman</h6></a>
                 </li>
                 <li className="nav-item">
-                <a className="nav-link " href="/"><h6>SALE</h6></a>
+                <a className="nav-link " href="/"><h6 className='navh'>SALE</h6></a>
                 </li>
             </ul>
 
             </div>
-            <a className="navbar-brand" href="/"><h1>HiT-Blunders</h1></a>
+            <a className="navbar-brand" href="/"><h1 className='navh'>HiT-Blunders</h1></a>
             <div className="btn-group btn-group-sm" role="group" aria-label="Small button group">
                 <button type="button" className="btn btn-outline-light"><img src="https://img.icons8.com/?size=512&id=3686&format=png" alt="" className='icon'/></button>
                 <button type="button" className="btn btn-outline-light"><img src="https://img.icons8.com/?size=512&id=b2DXU0pj5jFw&format=png" alt=""className='icon' /></button>
