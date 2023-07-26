@@ -1,24 +1,34 @@
 import './App.css';
-//import Card from './Components/Card/Card';
-// import Information from './Components/Information/Information';
-// import Navbar from './Components/Navbar/Navbar';
-// import Connect from './Components/Connect/Connect';
-// import ProductDetail from './Components/ProductDetail/ProductDetail';
-// import Signup from './Components/Signup/Signup';
+
+//import AddressDetail from './Pages/AddresDetail/AddressDetail';
+import{BrowserRouter,Routes,Route} from "react-router-dom"
+//import Homepage from "./Pages/Homepage"
+import AddressDetail from './Pages/AddresDetail/AddressDetail';
 import Addtocart from './Pages/Addtocart/Addtocart';
+import Menproduct from './Pages/Menproduct/Menproduct';
+//import PaymentDetail from './Pages/PaymentDetail/PaymentDetail';
+//import Womenproduct from './Pages/Womenproduct'
+
+
 
 function App() {
   return (
     <>
     <div>
-    <Addtocart/>
-      {/* <Navbar/>
-      {/* <Card/>
-      <ProductDetail/> */}
-      
-      {/* <Information/>
-      <Signup/>
-      <Connect/>  */}
+      <BrowserRouter>
+      <Routes>
+        
+        <Route path='/AddressDetail' element={<AddressDetail/>}/>
+        <Route path='/Addtocart' element={<Addtocart/>}/>
+        <Route path='/Menproduct' element={<Menproduct/>}/>
+        {/* <Route path='/PaymentDetail' element={<PaymentDetail/>}/> */}
+        {/* <Route path='/Womenproduct' element={<Womenproduct/>}/>
+        <Route path='/' element={<Homepage/>}/> */}
+      </Routes>
+      </BrowserRouter>
+    
+    
+    
 
     </div>
     </>
