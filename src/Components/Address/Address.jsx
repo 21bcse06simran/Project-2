@@ -14,7 +14,7 @@ function Address() {
 
 
     const saveDetail = () => {
-        const data = {
+        const detail = {
           fname: fname,
           lname: lname,
           email: email,
@@ -28,7 +28,7 @@ function Address() {
           headers: {
             "Content-Type": "application/json",
           },
-          body: JSON.stringify(data),
+          body: JSON.stringify(detail),
         })
         .then((res) => res.json())
         .then((detail) => {
@@ -43,10 +43,13 @@ function Address() {
     {
         
     },[])
+    const handleSelectChange = (event) => {
+      setState(event.target.value);
+    };
 
   return (
     <div>
-      <form className="row g-3 needs-validation" id='form' novalidate>
+      <form className="row g-3 needs-validation" id='form' noValidate>
   <div className="col-md-4">
     <label htmlFor="validationCustom01" className="form-label">First name</label>
     <input type="text" className="form-control" id="validationCustom01" value={fname} onChange={(e)=>setFname(e.target.value)} required/>
@@ -79,13 +82,19 @@ function Address() {
     </div>
   </div>
   <div className="col-md-3">
-    <label htmlFor="validationCustom04" className="form-label">State</label>
-    <select className="form-select" id="validationCustom04" required>
-      <option selected disabled value={state} onChange={(e)=>setState(e.target.value)}>Choose...</option>
-      <option >Odisha</option>
-      <option >Rajasthan</option>
-      <option >UP</option>
-    </select>
+  <label htmlFor="validationCustom04" className="form-label">
+        State
+      </label>
+      <div>
+      <h3>Select a state:</h3>
+      <select className="form-select" id="validationCustom04" value={state} onChange={handleSelectChange} required>
+        <option disabled value="">Choose...</option>
+        <option value="Odisha">Odisha</option>
+        <option value="Rajasthan">Rajasthan</option>
+        <option value="UP">UP</option>
+      </select>
+    </div>
+      
     <div className="invalid-feedback">
       Please select a valid state.
     </div>

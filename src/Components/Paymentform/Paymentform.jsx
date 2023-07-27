@@ -93,6 +93,14 @@ function Paymentform() {
         <button type="button" className="btn btn-dark" onClick={submitDetail}>Processed to payment</button>
       
     </div>
+    <div>
+        {arr.map((item) => (
+          <div key={item.id}>
+            {/* Render the content of each item */}
+          </div>
+        ))}
+      </div>
+    
       
     </div>
   )

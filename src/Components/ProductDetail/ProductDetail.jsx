@@ -1,7 +1,36 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./ProductDetail.css"
 
-function ProductDetail() {
+function ProductDetail(props) {
+    const [product,setProduct]=useState("[]")
+    const [mrp,setMrp]=useState("[]")
+    const [color,setColor]=useState("[]");
+    const savetocart=()=>
+    {
+        const detail
+        {
+            product:product,
+            mrp:mrp,
+            color:color
+
+        }
+        
+
+        fetch("http://localhost:8081/addtocart", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(detail),
+          })
+          .then((res) => res.json())
+          .then((detail) => {
+              console.log(detail)
+            alert("Saved successfully!!");
+            // Assuming 'detail' is an array received from the server, update 'arr' state with it
+            setArr(detail);
+          });
+        };
     return (
         <div>
             <div className='Contant'>
@@ -27,10 +56,10 @@ function ProductDetail() {
                 </button>
                 </div>
             <div className='Contant2'>
-            <h3>product name</h3>
-            <h5 className='Pline'>mrp</h5>
+            <h3>{props.product}</h3>
+            <h5 className='Pline'>{props.mrp}</h5>
             <h6 className='Pline'>price inclusive all texes</h6>
-            <h5 className='Pline'>color</h5>
+            <h5 className='Pline'>{props.color}</h5>
             
         
             <h5 className='Pline'>CHOOSE SIZE</h5>
@@ -58,7 +87,7 @@ function ProductDetail() {
             </div>
             </form>
             <div className="d-grid  col-6 mx-auto">
-            <button className="btn btn-dark" type="button" >Add to Cart</button>
+            <button className="btn btn-dark" type="button"onClick={savetocart} >Add to Cart</button>
             
             </div>
             <div className='dropdown'>
