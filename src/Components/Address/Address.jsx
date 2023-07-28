@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Address.css";
-import { v4 as uuidv4 } from 'uuid'; 
+import { v4 as uuidv4 } from "uuid";
 import { useNavigate } from "react-router-dom";
 function Address({ items, totalPrice }) {
   const [fname, setFname] = useState("");
@@ -10,6 +10,23 @@ function Address({ items, totalPrice }) {
   const [state, setState] = useState("");
   const [zip, setZip] = useState("");
   const navigate = useNavigate();
+  const [paymentMethod, setPaymentMethod] = useState("cash");
+  const [cardno, setcardno] = useState(null);
+  const [cvv, setcvv] = useState(null);
+  const [expiry, setexpiry] = useState(null);
+
+  const changecard = (e) => {
+    setcardno(e.target.value);
+  };
+  const changeexpiry = (e) => {
+    setexpiry(e.target.value);
+  };
+  const changecvv = (e) => {
+    setcvv(e.target.value);
+  };
+  const handlePaymentMethodChange = (event) => {
+    setPaymentMethod(event.target.value);
+  };
   const saveDetail = () => {
     const detail = {
       id: uuidv4(),
@@ -21,6 +38,12 @@ function Address({ items, totalPrice }) {
       zip: zip,
       items: items,
       totalPrice: totalPrice,
+      payment: paymentMethod,
+      carddetails: {
+        cardno: cardno,
+        expiry: expiry,
+        cvv: cvv,
+      },
     };
 
     fetch("http://localhost:8000/orders", {
@@ -35,10 +58,9 @@ function Address({ items, totalPrice }) {
         console.log(detail);
         alert("Saved successfully!!");
         // Assuming 'detail' is an array received from the server, update 'arr' state with it
-        
       });
 
-      navigate(`/success/${detail.id}`)
+    navigate(`/success/${detail.id}`);
   };
 
   useEffect(() => {}, []);
@@ -172,6 +194,49 @@ function Address({ items, totalPrice }) {
               You must agree before submitting.
             </div>
           </div>
+        </div>
+        <div>
+          <h2>Payment Options</h2>
+          <label>
+            <input
+              type="radio"
+              value="cash"
+              checked={paymentMethod === "cash"}
+              onChange={handlePaymentMethodChange}
+            />
+            Cash Payment
+          </label>
+          <br />
+          <label>
+            <input
+              type="radio"
+              value="card"
+              checked={paymentMethod === "card"}
+              onChange={handlePaymentMethodChange}
+            />
+            Card Payment
+          </label>
+
+          {/* Additional content based on selected payment method */}
+          {paymentMethod === "card" && (
+            <div>
+              <label>
+                Card Number:
+                <input type="number" onChange={changecard} />
+              </label>
+              <br />
+              <label>
+                Expiry Date:
+                <input type="text" onChange={changeexpiry} />
+              </label>
+              <br />
+              <label>
+                CVV:
+                <input type="number" onChange={changecvv} />
+              </label>
+              <br />
+            </div>
+          )}
         </div>
         <div className="col-12">
           <button className="btn btn-dark" type="submit" onClick={saveDetail}>

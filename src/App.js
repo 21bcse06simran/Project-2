@@ -9,13 +9,7 @@ import Login from './Pages/Login/Login';
 import Cart from './Components/Cart/Cart';
 import OrderPlaced from './Pages/Success/Success';
 import Product from './Pages/Product/Product';
-// import Addtocart from './Pages/Addtocart';
-// import Menproduct from './Pages/Menproduct';
-// import PaymentDetail from './Pages/PaymentDetail';
-// import Womenproduct from './Pages/Womenproduct';
-// import Homepage from './Pages/Homepage';
 
-// Function to render the App
 function App() {
   return (
       <div>
