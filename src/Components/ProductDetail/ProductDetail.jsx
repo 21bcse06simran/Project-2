@@ -1,49 +1,45 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import "./ProductDetail.css"
+import { useNavigate, useParams } from 'react-router-dom'
+import jsonData from '../../data.json'; 
 
-function ProductDetail(props) {
-    const [product,setProduct]=useState("[]")
-    const [mrp,setMrp]=useState("[]")
-    const [color,setColor]=useState("[]");
+function ProductDetail() {
+    const props = useParams();
+    const navigate = useNavigate();
+
+    const [product, setProduct] = useState(null);
+    useEffect(() => {
+        // Fetch the product information based on the product ID from the URL
+        const productId=props.id;
+        const selectedProduct = jsonData.product.find((item) => item.id === productId);
+        setProduct(selectedProduct);
+      }, [props.id]);
+    
+
+
     const savetocart=()=>
     {
-        const detail
-        {
-            product:product,
-            mrp:mrp,
-            color:color
-
-        }
         
-
-        fetch("http://localhost:8081/addtocart", {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify(detail),
-          })
-          .then((res) => res.json())
-          .then((detail) => {
-              console.log(detail)
-            alert("Saved successfully!!");
-            // Assuming 'detail' is an array received from the server, update 'arr' state with it
-            setArr(detail);
-          });
+        navigate(`/login/${product.id}`)
+        
         };
+if (!product) {
+    return <div>Loading...</div>; // You can show a loading state while fetching the data
+  }
     return (
+
         <div>
             <div className='Contant'>
             <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                    <img src="https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410372767005/665/410372767005_1_3515.webp" class="d-block w-100" alt="..."/>
+                    <img src={product.img1} className="d-block w-100" alt="..." />
                     </div>
                     <div class="carousel-item">
-                    <img src="https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410372767005/665/410372767005_2_4957.webp" class="d-block w-100" alt="..."/>
+                    <img src={product.img2} class="d-block w-100" alt="..."/>
                     </div>
                     <div class="carousel-item">
-                    <img src="https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410372767005/665/410372767005_4_3030.webp" class="d-block w-100" alt="..."/>
+                    <img src={product.img3} class="d-block w-100" alt="..."/>
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
@@ -56,10 +52,10 @@ function ProductDetail(props) {
                 </button>
                 </div>
             <div className='Contant2'>
-            <h3>{props.product}</h3>
-            <h5 className='Pline'>{props.mrp}</h5>
+            <h3>{product.product}</h3>
+            <h5 className='Pline'>{product.mrp}</h5>
             <h6 className='Pline'>price inclusive all texes</h6>
-            <h5 className='Pline'>{props.color}</h5>
+            <h5 className='Pline'>{product.color}</h5>
             
         
             <h5 className='Pline'>CHOOSE SIZE</h5>
@@ -93,42 +89,40 @@ function ProductDetail(props) {
             <div className='dropdown'>
             <div className="btn-group">
                 <button type="button" className="btn btn- dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
-                    Left-aligned, right-aligned lg
+                DESCRIPTION 
                 </button>
                 <ul className="dropdown-menu dropdown-menu-lg-end">
-                    <li><a className="dropdown-item" href="#">Menu item</a></li>
-                    <li><a className="dropdown-item" href="#">Menu item</a></li>
-                    <li><a className="dropdown-item" href="#">Menu item</a></li>
+                    <li><p>Regular style with a high waist and straight, elongated leg. The button fly and authentic details lend the jean a 1950s, rock-n-roll vibe.</p></li>
+                    
                 </ul>
                 </div>
                 <div className="btn-group">
                 <button type="button" className="btn btn- dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
-                    Left-aligned, right-aligned lg
+                FOR RESPONSIBLE LIVING
                 </button>
                 <ul className="dropdown-menu dropdown-menu-lg-end">
-                    <li><a className="dropdown-item" href="#">Menu item</a></li>
-                    <li><a className="dropdown-item" href="#">Menu item</a></li>
-                    <li><a className="dropdown-item" href="#">Menu item</a></li>
+                    <li><p>Better Cotton: Diesel is a member of the Better Cotton. Better C otton connects people and organizations throughout the cotton sector, from field to store, to promote measurable and continuing improvements for the environment, farming communities and the economies of cotton-producing areas</p></li>
+                   
                 </ul>
                 </div>
                 <div className="btn-group">
                 <button type="button" className="btn btn- dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
-                    Left-aligned, right-aligned lg
+                CARE INSTRUCTIONS 
                 </button>
                 <ul className="dropdown-menu dropdown-menu-lg-end">
-                    <li><a className="dropdown-item" href="#">Menu item</a></li>
-                    <li><a className="dropdown-item" href="#">Menu item</a></li>
-                    <li><a className="dropdown-item" href="#">Menu item</a></li>
+                    <li>Machine wash at 105 °F</li>
+                    <li>Do not bleach</li>
+                    <li>Low iron</li>
+                    <li>Do not dry clean</li>
+                    <li>Do not tumble dry</li>
                 </ul>
                 </div>
                 <div className="btn-group">
                 <button type="button" className="btn btn- dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
-                    Left-aligned, right-aligned lg
+                RETURN TIME LIMIT
                 </button>
                 <ul className="dropdown-menu dropdown-menu-lg-end">
-                    <li><a className="dropdown-item" href="#">Menu item</a></li>
-                    <li><a className="dropdown-item" href="#">Menu item</a></li>
-                    <li><a className="dropdown-item" href="#">Menu item</a></li>
+                    <li>Return Time Limit: Easy 30 days return</li>
                 </ul>
                 </div>
                 </div>
