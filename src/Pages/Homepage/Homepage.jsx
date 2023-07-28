@@ -1,17 +1,10 @@
 import React from 'react'
-import { useNavigate } from 'react-router-dom'
-
+import HomeContect from '../../Components/HomeContent/HomeContent'
 
 function Homepage() {
-  const navigate = useNavigate();
-  const gotoproduct=()=>
-  {
-    navigate(`/Product/`)
-  }
   return (
     <div>
-      <button onClick={gotoproduct}>Shop now</button>
-      
+      <HomeContect/>
     </div>
   )
 }
