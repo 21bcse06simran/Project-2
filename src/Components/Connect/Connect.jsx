@@ -10,7 +10,7 @@ function Connect() {
             <button type="button" class="btn btn-outline-"><img src="https://img.icons8.com/?size=1x&id=435&format=png" alt="" /></button>
             <button type="button" class="btn btn-outline-"><img src="https://img.icons8.com/?size=1x&id=32292&format=png" alt="" /></button>
             <button type="button" class="btn btn-outline-"><img src="https://img.icons8.com/?size=1x&id=37325&format=png" alt="" /></button>
-    </div>
+           </div>
           </form>
         </div>
       )
