@@ -1,0 +1,17 @@
+.order-placed-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .order-placed-container h1 {
+    color:#2E2E2E;
+    margin-bottom: 10px;
+  }
+  
+  .order-placed-container p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  /* You can further style the page as per your design requirements */
+  

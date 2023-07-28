@@ -2,19 +2,21 @@ import React from 'react'
 import Navbar from '../../Components/Navbar/Navbar'
 import Signup from '../../Components/Signup/Signup'
 import Connect from '../../Components/Connect/Connect'
-import ProductDetail from '../../Components/ProductDetail/ProductDetail'
+import MainComponent from '../Maincomponent'
 
-function Productpage() {
+function Product() {
   return (
     <div>
+      <div>
         <Navbar/>
-        <ProductDetail/>
+        <MainComponent/>
         <Signup/>
         <Connect/>
-
+        
+      </div>
       
     </div>
   )
 }
 
-export default Productpage
+export default Product
