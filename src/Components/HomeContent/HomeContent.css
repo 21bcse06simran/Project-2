@@ -1,0 +1,94 @@
+.photo{
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    padding: 7%;
+    margin: 0%;
+
+}
+.photo1{
+    margin: 5%;
+    display: grid;
+    grid-template-columns: repeat(5,20%);
+}
+h5{
+    margin: 5%;
+    padding: 5%;
+    text-align: center;
+}
+
+
+.card text-left mb-3{
+    width: fit-content;
+}
+
+
+
+
+.home-benefits-section .benefits-section-div img {
+    max-width: 100%;
+    width: 110px;
+    margin-bottom: 20px;
+}
+
+img, svg {
+    vertical-align: middle;
+}
+img {
+    border-style: none;
+}
+* {
+    box-sizing: border-box;
+    outline: none!important;
+}
+*, :after, :before {
+    box-sizing: border-box;
+}
+user agent stylesheet
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+a, a:hover {
+    text-decoration: none;
+    color: #000;
+    outline: none;
+}
+a {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+}
+user agent stylesheet
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+}
+.home-benefits-section .benefits-section-div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+body {
+    font-size: 14px;
+    font-family: "Scto_Grotesk_Regular";
+    font-family: var(--fontFamily);
+}
+body {
+    margin: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+}
+
+
+*, :after, :before {
+    box-sizing: border-box;
+}
+*, :after, :before {
+    box-sizing: border-box;
+}
