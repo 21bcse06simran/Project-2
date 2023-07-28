@@ -8,6 +8,7 @@ import Productpage from './Pages/Productpage/Productpage';
 import Login from './Pages/Login/Login';
 import Cart from './Components/Cart/Cart';
 import OrderPlaced from './Pages/Success/Success';
+import Product from './Pages/Product/Product';
 // import Addtocart from './Pages/Addtocart';
 // import Menproduct from './Pages/Menproduct';
 // import PaymentDetail from './Pages/PaymentDetail';
@@ -26,12 +27,7 @@ function App() {
             <Route path='login/:id' element={<Login/>}/>
             <Route path='cart/:email' element={<Cart/>}/>
             <Route path='success/:id' element={<OrderPlaced/>}/>
-      
-            {/* <Route path='/Addtocart' element={<Addtocart/>}/> */}
-            {/* <Route path='/Menproduct' element={<Menproduct/>}/> */}
-            {/* <Route path='/PaymentDetail' element={<PaymentDetail/>}/> */}
-            {/* <Route path='/Womenproduct' element={<Womenproduct/>}/> */}
-            {/* <Route path='/' element={<Homepage/>}/> */}
+            <Route path='product/' element={<Product/>}/>
           </Routes>
         </BrowserRouter>
       </div>

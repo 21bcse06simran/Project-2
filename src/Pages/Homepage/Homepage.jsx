@@ -1,19 +1,20 @@
 import React from 'react'
-import Navbar from '../../Components/Navbar/Navbar'
-import Signup from '../../Components/Signup/Signup'
-import Connect from '../../Components/Connect/Connect'
-import MainComponent from '../Maincomponent'
+import { useNavigate } from 'react-router-dom'
+
 
 function Homepage() {
+  const navigate = useNavigate();
+  const gotoproduct=()=>
+  {
+    navigate(`/Product/`)
+  }
   return (
     <div>
-        <Navbar/>
-        <MainComponent/>
-        <Signup/>
-        <Connect/>
-        
-      </div>
+      <button onClick={gotoproduct}>Shop now</button>
+      
+    </div>
   )
 }
 
 export default Homepage
+
