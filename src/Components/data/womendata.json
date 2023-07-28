@@ -1,0 +1,246 @@
+[
+    {
+        "id":"1",
+        "price":"8,999.00",
+        "heading": "D-SLANDY SUPER SKINNY FIT WOMAN BLUE MEDIUM WASHED JOGGJEANS® ",
+        "color":"Blue ",
+        "image":
+                {   
+                    "url":"https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410167421001/665/410167421001_1.webp",
+                    "width":"" ,
+                    "height":" "
+                }
+
+     },
+     {
+      "id":" 2",
+      "price":"13,300.00",
+      "heading":"DE-GLO-F REGULAR FIT WOMEN WHITE DRESS",
+      "color":"white",
+      "image":
+              { "url":"https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410345002001/665/410345002001_4_5082.webp",
+                "width":" ",
+                "height":" "
+
+              }
+     },
+     {
+        "id":"3",
+        "price":"60000.00 ",
+        "heading":"DE-SLIMMY-SM WOMAN REGULAR FIT JACKET",
+        "color":"Blue",
+        "image":
+                { "url":"https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410344966001/665/410344966001_1_9445.webp",
+                  "width":" ",
+                  "height":" "
+  
+                }
+       },
+       {
+        "id":"4",
+        "price":"3,400.00 ",
+        "heading":"ORSONE WOMEN BLUE WALLET",
+        "color":"Blue",
+        "image":
+                { "url":"https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410270753001/665/410270753001_1.webp",
+                  "width":" ",
+                  "height":" "
+  
+                }
+       },
+       {
+        "id":"5",
+        "price":"9,999.00 ",
+        "heading":"C-GISEY-STR REGULAR FIT WOMEN PINK SHIRT",
+        "color":"pink",
+        "image":
+                { "url":"https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410345065001/665/410345065001_6_5720.webp",
+                  "width":" ",
+                  "height":" "
+  
+                }
+       },
+       {
+        "id":"6",
+        "price":" 4,238.00",
+        "heading":"DSL2 BLACK WOMAN WALLET",
+        "color":"Black",
+        "image":
+                { "url":"https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410372696001/665/410372696001_1_1333.webp",
+                  "width":" ",
+                  "height":" "
+  
+                }
+       },
+       {
+        "id":"7 ",
+        "price":"13,199.00 ",
+        "heading":"1994 STRAIGHT FIT WOMAN BLACK MEDIUM WASHED JEANS",
+        "color":"Black",
+        "image":
+                { "url":"https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410345067008/665/410345067008_3_9662.webp",
+                  "width":" ",
+                  "height":" "
+  
+                }
+       },
+       {
+        "id":"8",
+        "price":"4,000.00 ",
+        "heading":"T-SLI-IND SLIM WOMEN VIOLET T-SHIRT",
+        "color":"violet",
+        "image":
+                { "url":"https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410315113005/665/410315113005_4_1483.webp",
+                  "width":" ",
+                  "height":" "
+  
+                }
+       },
+       {
+        "id":"9",
+        "price":" 8,499.00",
+        "heading":"",
+        "color":"yellow",
+        "image":
+                { "url":"https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410345277004/665/410345277004_3_5654.webp",
+                  "width":" ",
+                  "height":" "
+  
+                }
+       },
+       {
+        "id":" 10",
+        "price":"3,995.00",
+        "heading":"D-FELIX REGULAR FIT WOMEN WHITE DRESS",
+        "color":"white",
+        "image":
+                { "url":"https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410220879006/665/410220879007_3.webp",
+                  "width":" ",
+                  "height":" "
+  
+                }
+       },
+       {
+        "id":"11",
+        "price":"13,499.00",
+        "heading":"M-INERVA SLIM WOMEN BLUE DRESS",
+        "color":"Blue ",
+        "image":
+                { "url":"https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410345102001/665/410345102001_1_2570.webp",
+                  "width":" ",
+                  "height":" "
+  
+                }
+       },
+       {
+        "id":"12 ",
+        "price":"13,499.00  ",
+        "heading":"P-ZAMMY-MON REGULAR WOMEN WHITE PANTS",
+        "color":"",
+        "image":
+                { "url":"https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410345297001/665/410345297001_4_1203.webp",
+                  "width":" ",
+                  "height":" "
+  
+                }
+       },
+       {
+        "id":"13",
+        "price":"19,499.00  ",
+        "heading":"G-LYDIA REGULAR WOMEN BLUE JACKET",
+        "color":"Blue ",
+        "image":
+                { "url":"https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410345090004/665/410345090004_1_2211.webp",
+                  "width":" ",
+                  "height":" "
+  
+                }
+       },
+       {
+        "id":"14 ",
+        "price":"11,999.00",
+        "heading":"2017 SLANDY MEDIUM TREATED BLUE WOMAN SUPER SKINNY JEANS",
+        "color":"Blue",
+        "image":
+                { "url":"https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410372461008/665/410372461008_5_1903.webp",
+                  "width":" ",
+                  "height":" "
+  
+                }
+       },
+       {
+        "id":"15",
+        "price":"3,499.00",
+        "heading":"T-SLI-E2 REGULAR FIT WOMEN PINK T-SHIRT",
+        "color":"pink",
+        "image":
+                { "url":"https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410345022001/665/410345022001_2_2934.webp",
+                  "width":" ",
+                  "height":" "
+  
+                }
+       },
+       {
+        "id":"16",
+        "price":"9,999.00 ",
+        "heading":"S-GINN-HOOD-ZIP-IND LOOSE WOMAN BLACK SWEATER",
+        "color":"Black",
+        "image":
+                { "url":"https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410360464004/665/410360464004_4_4021.webp",
+                  "width":" ",
+                  "height":" "
+  
+                }
+       },
+       {
+        "id":"17",
+        "price":"9,995.00",
+        "heading":"D-ALBA REGULAR FIT WOMEN BLACK DRESS",
+        "color":"Black",
+        "image":
+                { "url":"https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410128093001/665/410128093001_1.webp",
+                  "width":" ",
+                  "height":" "
+  
+                }
+       },
+       {
+        "id":"18",
+        "price":"14,499.00 ",
+        "heading":"F-MACSY-MON SLIM WOMEN GREY SWEATER",
+        "color":"Grey",
+        "image":
+                { "url":"https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410345299001/665/410345299001_4_2840.webp",
+                  "width":" ",
+                  "height":" "
+  
+                }
+       },
+       {
+        "id":"19",
+        "price":"₹16,099.00",
+        "heading":"ROGUE BACKPACK X BLUE MAN BACKPACK",
+        "color":"Blue",
+        "image":
+                { "url":"https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410372524001/665/410372524001_4_6082.webp",
+                  "width":" ",
+                  "height":" "
+  
+                }
+       },
+       {
+        "id":"20",
+        "price":"₹6,599.00 ",
+        "heading":"T-SLIDART REGULAR PINK WOMAN T-SHIRT",
+        "color":"pink",
+        "image":
+                { "url":"https://cdn.pixelbin.io/v2/black-bread-289bfa/qlNgW4/t.resize(w:500)/product/410372622004/665/410372622004_2_5664.webp",
+                  "width":" ",
+                  "height":" "
+  
+                }
+       }
+
+
+     
+]
